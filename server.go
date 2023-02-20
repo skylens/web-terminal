@@ -10,9 +10,12 @@ import (
 )
 
 var (
-	EnvGOPATH     = os.Getenv("GOPATH")
-	TemplateFiles = fmt.Sprintf("%s/src/github.com/chengjoey/web-terminal/templates/*.html", EnvGOPATH)
-	StaticFiles   = fmt.Sprintf("%s/src/github.com/chengjoey/web-terminal/templates/static", EnvGOPATH)
+// 	EnvGOPATH     = os.Getenv("GOPATH")
+// 	TemplateFiles = fmt.Sprintf("%s/src/github.com/chengjoey/web-terminal/templates/*.html", EnvGOPATH)
+// 	StaticFiles   = fmt.Sprintf("%s/src/github.com/chengjoey/web-terminal/templates/static", EnvGOPATH)
+	TemplateFiles = fmt.Sprintf("templates/*.html")
+	StaticFiles   = fmt.Sprintf("templates/static")
+	
 )
 
 //对产生的任何error进行处理
